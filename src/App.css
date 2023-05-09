@@ -1,0 +1,101 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(#121212, #212b46);
+}
+
+.title{
+    font-size: 4rem;
+    color: #fff;
+    margin-bottom: 2rem;
+    animation: flipTitle 1.5s ease-in-out;
+}
+@keyframes flipTitle {
+    from {
+        transform: rotateX(90deg);
+    }
+    to {
+        transform: rotateX(0deg);
+    }
+}
+
+.container{
+    background-color: rgba(255,255, 255, 0.2);
+    padding: 20px;
+    margin: 34px 0;
+    display: flex;
+    border-radius: 8px;
+}
+
+.containerInput{
+    background-color: rgba(255,255, 255, 0.2);
+    padding: 15px;
+    margin: 34px 0;
+    display: flex;
+    border-radius: 8px;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.2);
+}
+
+.containerInput input{
+    background-color: transparent;
+    border: 0;
+    font-size: 20px;
+    color: #FFF;
+    outline: none;
+}
+
+.containerInput input::placeholder{ 
+    color: #f1f1f1;
+}
+
+.buscar{
+    background-color: transparent;
+    border: 0;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 20px;
+    color: #212b46;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out; 
+}
+
+.buscar:hover{
+    transform: scale(1.2);
+}
+
+main{
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 2rem;
+    width: 500ox;
+    border-radius: 8px;
+    background-color: #f1f1f1;
+}
+
+.main h2{
+    margin: 16px 0;
+    font-size: 39px;
+}
+
+.main span{
+    margin-bottom: 16px;
+    font-weight: bold;
+}
+
+@media (max-width: 500px){
+    .title{
+        font-size: 60px;
+    }
+    main{
+        min-width: 250px;
+        width: 80%; 
+    }
+    main h2{
+        font-size: 28px;
+    }
+}
